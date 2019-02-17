@@ -18,9 +18,9 @@ def index():
     # return redirect('http://www.baidu.com')
 
 
-@app.route('/user/<name>')
-def user(name):
-    return render_template('user.html', name=name)
+@app.route('/user/<user>')
+def user(user):
+    return render_template('user.html', name=user)
     # return '<h1> Hello, {}! </h1>'.format(name)
 
     # from flask import abort

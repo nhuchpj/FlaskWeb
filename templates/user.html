@@ -1,1 +1,7 @@
-<h1>Hello World! {{ name }}!</h1>
+<h1>
+    {% if user %}
+    Hello, {{ user }}!
+    {% else %}
+    Hello, Stranger!
+    {% endif %}
+</h1>
